@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "baseUrl": ".",
     "outDir": "./dist",
-    "declarationDir": "./dist/types",
+    "declarationDir": "./dist",
     "declarationMap": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
@@ -24,6 +24,7 @@
     "esModuleInterop": true,
     "importHelpers": true,
     "emitDeclarationOnly": true,
+    "sourceMap": false,
 
     /* Linting */
     "strict": true,

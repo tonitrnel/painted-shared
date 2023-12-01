@@ -1,6 +1,6 @@
 {
   "name": "@painted/shared",
-  "version": "0.0.1-rc.1",
+  "version": "0.0.1-rc.2",
   "type": "module",
   "description": "An common utils and hooks",
   "scripts": {
@@ -13,9 +13,10 @@
     "dist",
     "README.md"
   ],
-  "main": "./dist/shared.umd.js",
-  "module": "./dist/shared.es.js",
-  "types": "./dist/types/index.d.ts",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": "https://github.com/tonitrnel/painted-shared",
   "license": "MIT",
   "keywords": [
@@ -26,12 +27,8 @@
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/types/index.d.ts",
-        "default": "./dist/shared.es.js"
-      },
-      "require": {
-        "types": "./dist/types/index.d.ts",
-        "default": "./dist/http.umd.js"
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
       }
     }
   },
@@ -55,6 +52,7 @@
     "prettier": "2.8.8",
     "typescript": "5.0.2",
     "vite": "4.3.9",
-    "vitest": "0.32.4"
+    "vitest": "0.32.4",
+    "glob": "10.3.10"
   }
 }
